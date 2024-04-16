@@ -1,0 +1,18 @@
+#kesho project
+
+#jumpers == teachers
+#stay in kibuli paid 3000 daily
+# require reg form with:
+    name,location,DOB, gender,next of kin, NIN, recommenders name, level of education,jumper number,contacts
+j_name, j_location,j_dob,j_gender,j_nextOfKin,j_Nin,j_recommender,j_educationLevel,j_number,j_contact
+
+#babes == babies
+#registered on arrival 
+we require these details:
+    name of babe, gender, age, location, name of person who brough the babe,time of arrival, parents name, sex, fees, period of stay,number
+
+b_name, b_gender, b_age, b_location, b_nameOfBringer, b_timeOfArrival,b_timeOfDepature, b_parentsName, b_sex, b_fees, b_periodOfStay, b_payment, b_number, 
+
+
+simple is better than complex
+we are therefore going to have one project one app emphasizing simplicity
