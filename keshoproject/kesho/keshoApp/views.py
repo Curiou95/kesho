@@ -21,19 +21,21 @@ def babe(request):
 # trying to add a babe form
 def addbabe(request):
     # addedbabe = models.Babe.objects.get(id=pk)
-    babegetform = forms.AddBabeForm()
-    return render(request, 'keshoApp/addbabe', {'babegetform': babegetform}) 
+    babegetform = forms.BabeForm()
+    return render(request, 'keshoApp/addbabe.html', {'babegetform': babegetform}) 
 
 
-    babesform = forms.AddBabeForm(request.POST)
-    if request.method == 'POST':
-        if babesform.is_valid():
-            new_babe = babesform.save(commit=False)
-            new_babe.save
-    return render(request, 'keshoApp/addbabe.html', {'babesform': babesform})   
+    # babesform = forms.AddBabeForm(request.POST)
+    # if request.method == 'POST':
+    #     if babesform.is_valid():
+    #         new_babe = babesform.save(commit=False)
+    #         new_babe.save
+    # return render(request, 'keshoApp/addbabe.html', {'babesform': babesform})   
 
 def about(request):
     return render(request, 'keshoApp/about.html') 
 
-
+def addpayment(request):
+    getpaymentsform = forms.AddPaymentForm()
+    return render(request, 'keshoApp/payment.html', {'getpaymentsform': getpaymentsform}) 
 

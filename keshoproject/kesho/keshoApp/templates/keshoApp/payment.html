@@ -1,0 +1,17 @@
+{% extends "keshoApp/base.html" %}
+
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+{% block content %}
+
+<form action="" method="post">
+    <h1>Payments</h1>
+    {% csrf_token %}
+    {{ getpaymentsform | crispy }}
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+    
+{% endblock content %}
